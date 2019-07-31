@@ -3,7 +3,7 @@
 
 ###### deploy
 ```
-$ virtualenv --python=/usr/bin/python3 tgbot
+$ virtualenv --python=/usr/bin/python3.7 tgbot
 $ source tgbot/bin/activate
 $ pip install -r requirements.txt
 $ python main.py
