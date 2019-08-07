@@ -28,7 +28,7 @@ class socialNet():
     def twPost(self, content):
         hashtag = ''
 
-        if not len(content["hashtags"]) >= 1:
+        if len(content["hashtags"]) >= 1:
             for ht in content["hashtags"]:
                 hashtag += ht + " "
         else:
