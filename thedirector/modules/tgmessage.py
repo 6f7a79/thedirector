@@ -48,7 +48,7 @@ class TgMessage(TgUpdate):
             afk = "*user* [{fname}](tg://user?id={id}) *is afk*\n    *> {reason}*".format(fname=user_fname, id=user_id, reason=remain_txt)
             utils.replyMsg(text=afk)
         elif command == "/back" or command == "/on":
-            back = "*user* [{fname}](tg://user?id={id}) *is back*\n    *> {reason}".format(fname=user_fname, id=user_id, reason=remain_txt)
+            back = "*user* [{fname}](tg://user?id={id}) *is back*\n    *> {reason}*".format(fname=user_fname, id=user_id, reason=remain_txt)
             utils.replyMsg(text=back)
         elif command == "/ban" and self.replytomessage and sudo:
             ban = "*user* [{fname}](tg://user?id={id}) *banned*".format(fname=self.target_fname, id=self.target_user_id)
